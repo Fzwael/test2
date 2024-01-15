@@ -1,0 +1,297 @@
+{
+  "id" : "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5",
+  "platform" : true,
+  "bom" : "io.quarkus.platform:quarkus-amazon-services-bom::pom:3.6.5",
+  "quarkus-core-version" : "3.6.5",
+  "extensions" : [ {
+    "name" : "Quarkus - Amazon Services - Apache Client - Runtime - Internal",
+    "description" : "This module only exists to house quarkus-apache-httpclient as a conditional dependency",
+    "metadata" : {
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-apache-httpclient", "io.quarkus:quarkus-arc" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-apache-client-internal::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon Cognito User Pools",
+    "description" : "Connect to Amazon Cognito User Pools service",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "cognito-user-pools", "cognitoidentityprovider", "cognito-identity-provider", "cognito-idp", "aws", "amazon" ],
+      "config" : [ "quarkus.cognito-user-pools." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-cognitouserpools.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-cognito-user-pools::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon Services Common",
+    "description" : "Common components for Amazon Services",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc" ],
+      "unlisted" : true,
+      "status" : "stable",
+      "built-with-quarkus-core" : "3.6.3",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "categories" : [ "data" ],
+      "keywords" : [ "amazon services", "aws", "amazon" ]
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-common::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Quarkus - Amazon Services - CRT Client - Runtime - Internal",
+    "description" : "This module only exists to house quarkus-amazon-crt as a conditional dependency",
+    "metadata" : {
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkiverse.amazonservices:quarkus-amazon-crt", "io.quarkus:quarkus-arc" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-crt-client-internal::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Aws Crt",
+    "description" : "Parent POM for Quarkiverse projects that includes the default release and artifact publishing related\n    configuration",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkus:quarkus-arc", "io.quarkus:quarkus-core" ],
+      "status" : "preview",
+      "keywords" : [ "crt", "aws", "amazon" ],
+      "built-with-quarkus-core" : "3.6.3",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "categories" : [ "data" ]
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-crt::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon DynamoDB Enhanced",
+    "description" : "Connect to Amazon DynamoDB datastore",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common", "io.quarkiverse.amazonservices:quarkus-amazon-dynamodb" ],
+      "status" : "stable",
+      "built-with-quarkus-core" : "3.6.3",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-dynamodb.html",
+      "categories" : [ "data" ],
+      "keywords" : [ "dynamodb enhanced", "enhanced", "dynamodb", "dynamo", "aws", "amazon" ]
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-dynamodb-enhanced::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon DynamoDB",
+    "description" : "Connect to Amazon DynamoDB datastore",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "dynamodb", "dynamo", "aws", "amazon" ],
+      "config" : [ "quarkus.dynamodb." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-dynamodb.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-dynamodb::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon IAM",
+    "description" : "Connect to Amazon IAM",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "iam", "aws", "amazon" ],
+      "config" : [ "quarkus.iam." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-iam.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-iam::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon KMS",
+    "description" : "Connect to Amazon KMS",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "kms", "aws", "amazon" ],
+      "config" : [ "quarkus.kms." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-kms.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-kms::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon Lambda",
+    "description" : "Connect to Amazon Lambda",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "lambda", "aws", "amazon" ],
+      "config" : [ "quarkus.lambda." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-lambda.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-lambda::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Quarkus - Amazon Services - Netty Client - Runtime - Internal",
+    "description" : "This module only exists to house quarkus-netty-httpclient as a conditional dependency",
+    "metadata" : {
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-arc" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-netty-client-internal::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon S3",
+    "description" : "Connect to Amazon S3 cloud storage",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "s3", "aws", "amazon" ],
+      "config" : [ "quarkus.s3." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-s3.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-s3::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon Secrets Manager",
+    "description" : "Connect to Amazon Secrets Manager",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "secretsmanager", "aws", "amazon" ],
+      "config" : [ "quarkus.secretsmanager." ],
+      "status" : "preview",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-secretsmanager.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-secretsmanager::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon SES",
+    "description" : "Connect to Amazon SES",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "ses", "aws", "amazon" ],
+      "config" : [ "quarkus.ses." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-ses.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-ses::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon SNS",
+    "description" : "Connect to Amazon SNS pub/sub messaging service",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "sns", "aws", "amazon" ],
+      "config" : [ "quarkus.sns." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-sns.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-sns::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon SQS",
+    "description" : "Connect to Amazon SQS messaging queue service",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "sqs", "aws", "amazon" ],
+      "config" : [ "quarkus.sqs." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-sqs.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-sqs::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon SSM",
+    "description" : "Connect to Amazon SSM",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "ssm", "aws", "amazon" ],
+      "config" : [ "quarkus.ssm." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-ssm.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-ssm::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Amazon STS",
+    "description" : "Connect to Amazon STS",
+    "metadata" : {
+      "categories" : [ "data" ],
+      "keywords" : [ "sts", "aws", "amazon" ],
+      "config" : [ "quarkus.sts." ],
+      "status" : "stable",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-amazon-services",
+      "guide" : "https://docs.quarkiverse.io/quarkus-amazon-services/dev/amazon-sts.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkiverse.amazonservices:quarkus-amazon-common" ],
+      "built-with-quarkus-core" : "3.6.3"
+    },
+    "artifact" : "io.quarkiverse.amazonservices:quarkus-amazon-sts::jar:2.7.3",
+    "origins" : [ "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  } ],
+  "categories" : [ {
+    "id" : "integration",
+    "name" : "Integration",
+    "description" : "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+    "metadata" : {
+      "pinned" : [ "org.apache.camel.quarkus:camel-quarkus-core", "org.apache.camel.quarkus:camel-quarkus-core-xml" ]
+    }
+  }, {
+    "id" : "business-automation",
+    "name" : "Business Automation",
+    "description" : "Rules engine, BPM, etc"
+  } ],
+  "metadata" : {
+    "last-bom-update" : "io.quarkus.platform:quarkus-amazon-services-bom:3.6.5",
+    "platform-release" : {
+      "platform-key" : "io.quarkus.platform",
+      "stream" : "3.6",
+      "version" : "3.6.5",
+      "members" : [ "io.quarkus.platform:quarkus-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-qpid-jms-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cassandra-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cxf-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-camel-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-debezium-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+    }
+  }
+}

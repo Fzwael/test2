@@ -1,0 +1,184 @@
+{
+  "id" : "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5",
+  "platform" : true,
+  "bom" : "io.quarkus.platform:quarkus-google-cloud-services-bom::pom:3.6.5",
+  "quarkus-core-version" : "3.6.5",
+  "extensions" : [ {
+    "name" : "Google Cloud Bigquery",
+    "description" : "Use Google Cloud BigQuery analytics database service",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "status" : "preview",
+      "built-with-quarkus-core" : "3.5.0",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "minimum-java-version" : "11",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/bigquery.html",
+      "categories" : [ "cloud", "data" ],
+      "keywords" : [ "bigquery", "google cloud", "gcloud", "gcp" ]
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-bigquery::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Bigtable",
+    "description" : "Use Google Cloud Bigtable key/value database service",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "status" : "preview",
+      "built-with-quarkus-core" : "3.5.0",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "minimum-java-version" : "11",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/bigtable.html",
+      "categories" : [ "cloud", "data" ],
+      "keywords" : [ "bigtable", "google cloud", "gcloud", "gcp" ]
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-bigtable::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Common",
+    "description" : "Parent POM for Quarkiverse projects that includes the default release and artifact publishing related\n    configuration",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc" ],
+      "unlisted" : "true",
+      "status" : "experimental",
+      "built-with-quarkus-core" : "3.5.0",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "minimum-java-version" : "11",
+      "categories" : [ "cloud" ],
+      "keywords" : [ "google cloud", "gcloud", "gcp" ]
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Firebase Admin",
+    "description" : "Use Google Cloud Firebase Admin to perform privileged actions",
+    "metadata" : {
+      "categories" : [ "cloud", "data" ],
+      "keywords" : [ "firebase", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.firebase." ],
+      "status" : "experimental",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/firebase-admin.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-virtual-threads", "io.quarkus:quarkus-vertx-http", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-security" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-firebase-admin::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Firestore",
+    "description" : "Use Google Cloud Firestore NOSQL database service",
+    "metadata" : {
+      "categories" : [ "cloud", "data" ],
+      "keywords" : [ "firestore", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.firestore." ],
+      "status" : "preview",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/firestore.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-firestore::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Logging",
+    "description" : "Use Google Cloud operations logging",
+    "metadata" : {
+      "categories" : [ "cloud" ],
+      "keywords" : [ "logging", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.logging." ],
+      "status" : "experimental",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/logging.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-logging::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Pubsub",
+    "description" : "Use Google Cloud PubSub messaging broker service",
+    "metadata" : {
+      "categories" : [ "cloud", "messaging" ],
+      "keywords" : [ "pubsub", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.pubsub." ],
+      "status" : "preview",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/pubsub.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-pubsub::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Secret Manager",
+    "description" : "Use Google Cloud Secret Manager service",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "status" : "preview",
+      "built-with-quarkus-core" : "3.5.0",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "minimum-java-version" : "11",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/secretmanager.html",
+      "categories" : [ "cloud", "security" ],
+      "keywords" : [ "secretmanager", "google cloud", "gcloud", "gcp" ]
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-secret-manager::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Spanner",
+    "description" : "Use Google Cloud Spanner RDBMS database service",
+    "metadata" : {
+      "categories" : [ "cloud", "data" ],
+      "keywords" : [ "spanner", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.spanner." ],
+      "status" : "preview",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/spanner.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-spanner::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Google Cloud Storage",
+    "description" : "Use Google Cloud Storage object storage service",
+    "metadata" : {
+      "categories" : [ "cloud" ],
+      "keywords" : [ "storage", "google cloud", "gcloud", "gcp" ],
+      "config" : [ "quarkus.google.cloud.storage." ],
+      "status" : "preview",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-google-cloud-services",
+      "guide" : "https://quarkiverse.github.io/quarkiverse-docs/quarkus-google-cloud-services/main/storage.html",
+      "minimum-java-version" : "11",
+      "extension-dependencies" : [ "io.quarkiverse.googlecloudservices:quarkus-google-cloud-common", "io.quarkus:quarkus-core", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-grpc-common", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-virtual-threads" ],
+      "built-with-quarkus-core" : "3.5.0"
+    },
+    "artifact" : "io.quarkiverse.googlecloudservices:quarkus-google-cloud-storage::jar:2.6.0",
+    "origins" : [ "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  } ],
+  "categories" : [ {
+    "id" : "integration",
+    "name" : "Integration",
+    "description" : "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+    "metadata" : {
+      "pinned" : [ "org.apache.camel.quarkus:camel-quarkus-core", "org.apache.camel.quarkus:camel-quarkus-core-xml" ]
+    }
+  }, {
+    "id" : "business-automation",
+    "name" : "Business Automation",
+    "description" : "Rules engine, BPM, etc"
+  } ],
+  "metadata" : {
+    "last-bom-update" : "io.quarkus.platform:quarkus-google-cloud-services-bom:3.6.0",
+    "platform-release" : {
+      "platform-key" : "io.quarkus.platform",
+      "stream" : "3.6",
+      "version" : "3.6.5",
+      "members" : [ "io.quarkus.platform:quarkus-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-qpid-jms-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cassandra-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cxf-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-camel-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-debezium-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+    }
+  }
+}

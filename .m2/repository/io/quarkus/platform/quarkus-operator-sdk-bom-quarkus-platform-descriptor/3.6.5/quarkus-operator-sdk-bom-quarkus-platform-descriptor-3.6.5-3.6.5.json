@@ -1,0 +1,57 @@
+{
+  "id" : "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5",
+  "platform" : true,
+  "bom" : "io.quarkus.platform:quarkus-operator-sdk-bom::pom:3.6.5",
+  "quarkus-core-version" : "3.6.5",
+  "extensions" : [ {
+    "name" : "Operator SDK - OLM Bundle Generator",
+    "description" : "OLM Bundle Generation for Java Operator SDK operators",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkiverse.operatorsdk:quarkus-operator-sdk", "io.quarkus:quarkus-arc", "io.quarkus:quarkus-openshift-client", "io.quarkus:quarkus-kubernetes-client", "io.quarkus:quarkus-jackson", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-virtual-threads", "io.quarkus:quarkus-smallrye-health", "io.quarkus:quarkus-vertx-http", "io.quarkus:quarkus-jsonp", "io.quarkus:quarkus-core", "io.quarkus:quarkus-kubernetes", "io.quarkus:quarkus-kubernetes-client-internal", "io.quarkus:quarkus-container-image", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation" ],
+      "keywords" : [ "operator", "kubernetes", "openshift", "olm", "csv", "bundle" ],
+      "short-name" : "olm",
+      "built-with-quarkus-core" : "3.5.2",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-operator-sdk",
+      "minimum-java-version" : "11",
+      "categories" : [ "cloud" ]
+    },
+    "artifact" : "io.quarkiverse.operatorsdk:quarkus-operator-sdk-bundle-generator::jar:6.4.0",
+    "origins" : [ "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  }, {
+    "name" : "Operator SDK",
+    "description" : "Quarkus extension for the Java Operator SDK (https://javaoperatorsdk.io)",
+    "metadata" : {
+      "extension-dependencies" : [ "io.quarkus:quarkus-arc", "io.quarkus:quarkus-core", "io.quarkus:quarkus-openshift-client", "io.quarkus:quarkus-kubernetes-client", "io.quarkus:quarkus-jackson", "io.quarkus:quarkus-vertx", "io.quarkus:quarkus-netty", "io.quarkus:quarkus-virtual-threads", "io.quarkus:quarkus-kubernetes", "io.quarkus:quarkus-kubernetes-client-internal", "io.quarkus:quarkus-container-image", "io.quarkus:quarkus-mutiny", "io.quarkus:quarkus-smallrye-context-propagation", "io.quarkus:quarkus-smallrye-health", "io.quarkus:quarkus-vertx-http", "io.quarkus:quarkus-jsonp" ],
+      "cli-plugins" : [ "io.quarkiverse.operatorsdk:quarkus-operator-sdk-cli:6.4.0" ],
+      "built-with-quarkus-core" : "3.5.2",
+      "scm-url" : "https://github.com/quarkiverse/quarkus-operator-sdk",
+      "minimum-java-version" : "11",
+      "short-name" : "qosdk",
+      "categories" : [ "cloud" ],
+      "keywords" : [ "operator", "kubernetes", "openshift" ]
+    },
+    "artifact" : "io.quarkiverse.operatorsdk:quarkus-operator-sdk::jar:6.4.0",
+    "origins" : [ "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+  } ],
+  "categories" : [ {
+    "id" : "integration",
+    "name" : "Integration",
+    "description" : "Connectors to read to write from a skew of systems (file, S#, Twitter, etc)",
+    "metadata" : {
+      "pinned" : [ "org.apache.camel.quarkus:camel-quarkus-core", "org.apache.camel.quarkus:camel-quarkus-core-xml" ]
+    }
+  }, {
+    "id" : "business-automation",
+    "name" : "Business Automation",
+    "description" : "Rules engine, BPM, etc"
+  } ],
+  "metadata" : {
+    "last-bom-update" : "io.quarkus.platform:quarkus-operator-sdk-bom:3.6.0",
+    "platform-release" : {
+      "platform-key" : "io.quarkus.platform",
+      "stream" : "3.6",
+      "version" : "3.6.5",
+      "members" : [ "io.quarkus.platform:quarkus-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-qpid-jms-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cassandra-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-amazon-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-cxf-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-camel-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-debezium-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-blaze-persistence-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-google-cloud-services-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5", "io.quarkus.platform:quarkus-operator-sdk-bom-quarkus-platform-descriptor:3.6.5:json:3.6.5" ]
+    }
+  }
+}
